@@ -1,0 +1,17 @@
+- Domain
+- Scalable, maintainable, extensible, readable
+
+OOP (Object oriented programming)
+Real world         <------>       Software
+
+1. Actors          <------>       Data (value) -- Objects
+- Student
+- Professor                       `class Student` --- 1 to n Objects can be created. Name of the class gives
+                                   data type to the object.
+                                   Built in classes -- str,  int, float, bool
+- Book
+- Author
+....
+
+2. Characteristics of    <-------> Attributes on the object
+the actors
