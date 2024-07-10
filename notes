@@ -15,3 +15,5 @@ Real world         <------>       Software
 
 2. Characteristics of    <-------> Attributes on the object
 the actors
+
+3. Actions that we do on the actors <--------> Methods called on the object

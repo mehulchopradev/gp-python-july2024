@@ -1,0 +1,16 @@
+class `list`
+- to organize data in an ordered fashion one after another in continous memory locations
+- supports duplicate data
+- can be easily modified : add, remove, modify
+- different operations can be easily performed on the list
+- store homogenous data: marks, cars, Student --- preferred
+- store heterogenous data: [name, gender, roll, marks] -- not preferred
+- list is a mutable object
+
+class `tuple`
+- to organize data in an ordered fashion one after another in continous memory locations
+- supports duplicate data
+- unlike the list, the tuple data structure is immutable
+- different operations can be easily performed on the list
+- ideal data structure for storing heterogenous data: (name, gender, roll, marks) -- preferred
+- store homogenous data: marks, cars, Student --- not preferred
