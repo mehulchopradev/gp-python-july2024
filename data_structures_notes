@@ -14,3 +14,19 @@ class `tuple`
 - different operations can be easily performed on the list
 - ideal data structure for storing heterogenous data: (name, gender, roll, marks) -- preferred
 - store homogenous data: marks, cars, Student --- not preferred
+
+class `set`
+- does not allow duplicates (ignores it)
+- mathematical set
+- unordered elements
+- mutable
+
+
+class `dict`
+- collection of elements
+- element -> (key, value)
+- key suppose to be unique
+- indexing happens on the basis of the key
+- search in dict happens always on the basis of the key
+- unordered
+- mutable
