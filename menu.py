@@ -47,11 +47,7 @@ from com.globalpayex.lib.math_series import even_series, odd_series # user defin
 from math import factorial # built in module
 
 while True:
-  print('1. Even series')
-  print('2. Odd series')
-  print('3. Grader')
-  print('4. Factorial')
-  print('5. Exit')
+  print('1. Even series', '2. Odd series', '3. Grader', '4. Factorial', '5. Exit', sep='\n')
 
   choice = int(input('Please enter ur choice: '))
 

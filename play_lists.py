@@ -66,3 +66,6 @@ print(m)
 print(nos)
 del nos[:4]
 print(nos)
+
+nos.sort(reverse=True)
+print(nos)
