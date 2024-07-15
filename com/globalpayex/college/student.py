@@ -1,10 +1,16 @@
 # custom class
-class Student:
+# specialized class
+# sub class
+# child class
+from com.globalpayex.college.college_user import CollegeUser
+class Student(CollegeUser):
 
   # constructor
   def __init__(self, name, gender, roll, marks):
-    self.name = name
-    self.gender = gender
+    super().__init__(name, gender)
+    # Internally
+    # CollegeUser | __init__(self, name, gender)
+    
     self.roll = roll
     self.marks = marks
 
@@ -12,10 +18,14 @@ class Student:
     # return self
 
   # instance methods
+
+  # method overriding
   def get_details(self):
-    # self -> s1, s2, s100,, current Student object
-    return 'Name: ' + self.name + '\nGender: ' + self.gender + '\nRoll: ' + str(self.roll)\
-        + '\nMarks: ' + str(self.marks)
+    ''' return 'Name: ' + self.name + '\nGender: ' + self.gender\
+    + '\nRoll: ' + str(self.roll) + '\nMarks: ' + str(self.marks) '''
+    # return 'Name: {0}\nGender: {1}\nRoll: {2}\nMarks: {3}'.format(self.name, self.gender, self.roll, self.marks)
+    return 'Name: {name}\nGender: {gender}\nRoll: {roll}\nMarks: {marks}'\
+      .format(name=self.name, gender=self.gender, roll=self.roll, marks=self.marks)
   
   def calculate_grade(self):
     marks = self.marks

@@ -1,4 +1,5 @@
 from com.globalpayex.college.student import Student
+from com.globalpayex.college.professor import Professor
 
 # range(2, 10, 2)
 
@@ -49,3 +50,12 @@ print(s2.get_details())
 print(s1.calculate_grade()) # Student | calculate_grade(s1)
 
 print(s2.calculate_grade()) # Student | calculate_grade(s2)
+
+p1 = Professor(name='mehul', gender='m',\
+                subjects=['Physics', 'Maths'])
+# Internally
+# 1. RAM --> 6003
+# 2. Professor | __init__(6003,name='mehul', gender='m', subjects=['Physics', 'Maths'])
+# print(p1.name)
+# print(p1.gender)
+print(p1.get_details())

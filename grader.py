@@ -28,4 +28,5 @@ def calc_grade(marks):
   return grade
 
 marks = float(input('enter the marks scored: '))
-print('Hey you scored ' + calc_grade(marks) + ' grade')
+# print('Hey you scored ' + calc_grade(marks) + ' grade')
+print('Hey you scored {0} grade'.format(calc_grade(marks=marks)))

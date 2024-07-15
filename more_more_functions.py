@@ -18,6 +18,7 @@ print(area_circle(radius=4)) # callable
 # print(name()) # non callable
 
 
+# Functional programming
 # a function can be defined inside another function in python
 def abc(i):
   j = 10 # j (int) -> abc
