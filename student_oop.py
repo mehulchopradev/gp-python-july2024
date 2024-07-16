@@ -1,6 +1,8 @@
 from com.globalpayex.college.student import Student
 from com.globalpayex.college.professor import Professor
 
+print(Student.count)
+
 # range(2, 10, 2)
 
 # s1 = Student()
@@ -13,10 +15,15 @@ s1.gender = 'm'
 s1.roll = 10
 s1.marks = 90 '''
 
-s1 = Student('mehul', 'm', 10, 90)
+# s1 = Student('mehul', 'm', 10, 90)
 # Internally
 # 1. at some random address in the ram (5004) object is created
 # 2. Student('mehul', 'm', 10, 90) ---> Student | __init__(5004, 'mehul', 'm', 10, 90)
+
+# class methods are called using the class name
+s1 = Student.new_instance(name='mehul', gender='m', roll=10, marks=90)
+# Internally
+# Student | new_instance()
 
 # s2 = Student()
 # Internally
@@ -27,6 +34,8 @@ s1 = Student('mehul', 'm', 10, 90)
 s2.gender = 'f'
 s2.roll = 14
 s2.marks = 68 '''
+
+print(Student.count)
 
 s2 = Student('jane', 'f', 14, 68)
 
@@ -43,13 +52,13 @@ print(s1.get_details())
 # s1.get_details() ----> Student| get_details(s1)
 
 
-print(s2.get_details())
+# print(s2.get_details())
 # Internally
 # s2.get_details() ---> Student | get_details(s2)
 
-print(s1.calculate_grade()) # Student | calculate_grade(s1)
+# print(s1.calculate_grade()) # Student | calculate_grade(s1)
 
-print(s2.calculate_grade()) # Student | calculate_grade(s2)
+# print(s2.calculate_grade()) # Student | calculate_grade(s2)
 
 p1 = Professor(name='mehul', gender='m',\
                 subjects=['Physics', 'Maths'])
@@ -58,4 +67,20 @@ p1 = Professor(name='mehul', gender='m',\
 # 2. Professor | __init__(6003,name='mehul', gender='m', subjects=['Physics', 'Maths'])
 # print(p1.name)
 # print(p1.gender)
-print(p1.get_details())
+# print(p1.get_details())
+
+a = 8 # int object
+
+print(a)
+# Internally
+# print(a.__str__())
+
+print(s2)
+# Internally
+# print(s2.__str__()) # Student | __str__(s2)
+
+print(p1)
+# Internally
+# print(p1.__str__()) # Professor | __str__(p1)
+
+print(Student.count)

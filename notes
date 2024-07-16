@@ -17,3 +17,16 @@ Real world         <------>       Software
 the actors
 
 3. Actions that we do on the actors <--------> Methods called on the object
+
+
+
+General success flow
+Python interpreter -> play_input -> '45' -> int('45') -> 45 -> odd -> Program ends
+
+Error flow 1
+Python interpreter -> play_input -> 'good morning' -> int('good morning')
+  -> raises (throws) a ValueError -> play_input -> rethrow - reraise ValueError -> Python interpreter
+
+Error flow 2
+Python interpreter -> play_input -> 'good morning' -> int('good morning')
+  -> raises (throws) a ValueError -> play_input -> handle the error (ValueError) -> Program ends

@@ -5,14 +5,21 @@
 from com.globalpayex.college.college_user import CollegeUser
 class Student(CollegeUser):
 
+  # class attribute
+  # access using the class name
+  count = 0
+
   # constructor
   def __init__(self, name, gender, roll, marks):
+    # instance attributes
     super().__init__(name, gender)
     # Internally
     # CollegeUser | __init__(self, name, gender)
     
     self.roll = roll
     self.marks = marks
+
+    Student.count += 1
 
     # Implicitly
     # return self
@@ -40,3 +47,7 @@ class Student(CollegeUser):
     else:
       grade = 'F'
     return grade
+  
+  # class methods
+  def new_instance(name, gender, roll, marks):
+    return Student(name=name, gender=gender, roll=roll, marks=marks)
