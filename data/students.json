@@ -1,0 +1,17 @@
+[
+  {
+    "name": "mehul",
+    "gender": "m",
+    "roll": 10
+  },
+  {
+    "name": "jane",
+    "gender": "f",
+    "roll": 13
+  },
+  {
+    "name": "rahul",
+    "gender": "m",
+    "roll": 9
+  }
+]
