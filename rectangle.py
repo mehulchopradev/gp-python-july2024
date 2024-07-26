@@ -14,8 +14,8 @@ def statistics(length, breadth):
 input() always returns user input as a `str`
 data type
 '''
-l = float(input('enter the length: '))
-b = float(input('enter breadth: '))
+''' l = float(input('enter the length: '))
+b = float(input('enter breadth: ')) '''
 
 # p = perimeter_rectangle(l, b)
 # a = area_rectangle(l, b)
@@ -31,6 +31,6 @@ print(perimeter_rectangle(3)) # breadth default value 2
  
 print(perimeter_rectangle()) '''
 
-t = statistics(l, b)
+''' t = statistics(l, b)
 print('Perimeter is ' + str(t[0]))
-print('Area is ' + str(t[1]))
+print('Area is ' + str(t[1])) '''

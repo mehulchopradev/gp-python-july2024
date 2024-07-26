@@ -17,5 +17,5 @@
 def evenodd(n):
   return "odd" if n % 2 else "even"
   
-n = int(input('enter n: '))
-print(evenodd(n))
+''' n = int(input('enter n: '))
+print(evenodd(n)) '''

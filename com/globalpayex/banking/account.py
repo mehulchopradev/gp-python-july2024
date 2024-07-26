@@ -9,6 +9,7 @@ On every Account object we can call following instance methods
   - deposit(amt) --> updated balance
 '''
 from com.globalpayex.banking.min_bal_error import MinBalError
+from com.globalpayex.banking.utils import cannot_withdraw
 class Account:
 
   min_balance = 1000
@@ -26,7 +27,7 @@ class Account:
     if amt <= 0:
       raise ValueError('withdrawl amt must be more than 0')
     
-    if self.balance - amt < Account.min_balance:
+    if cannot_withdraw(account=self, amt=amt):
       raise MinBalError(msg='min bal of account not getting maintained')
     
     self.balance -= amt
